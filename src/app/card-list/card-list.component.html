@@ -1,0 +1,12 @@
+<p>card-list works!</p>
+<!--<pre>{{ receivedContact | json }}</pre>-->
+<ul *ngIf="receivedContact">
+  <li>{{ receivedContact.name.first }}</li>
+  <li>{{ receivedContact.name.last }}</li>
+  <li>{{ receivedContact.gender }}</li>
+  <li>
+    {{
+      receivedContact.login.uuid.substr(receivedContact.login.uuid.length - 5)
+    }}
+  </li>
+</ul>

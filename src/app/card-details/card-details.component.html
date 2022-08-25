@@ -1,0 +1,13 @@
+<p>card-details works!</p>
+
+<table class="table table-hover table-stripped">
+  <tr *ngFor="let c of contact" (click)="selectContact(c)">
+    <td>{{ c.login.uuid.substr(c.login.uuid.length - 5) }}</td>
+
+    <td>{{ c.name.first }}</td>
+    <td>{{ c.name.title }}</td>
+    <td>{{ c.gender }}</td>
+    <td>{{ c.location.street.name }}</td>
+    <td>{{ c.location.street.number }}</td>
+  </tr>
+</table>

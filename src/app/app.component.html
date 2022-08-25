@@ -1,4 +1,5 @@
 <hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<p>Start editing to see some magic happen :)</p>
+<app-card-details (sendContact)="Selectedcontact = $event"></app-card-details>
+
+<app-card-list [receivedContact]="Selectedcontact"></app-card-list>
